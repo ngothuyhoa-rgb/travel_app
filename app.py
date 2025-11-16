@@ -5,8 +5,8 @@ import requests
 # ======================
 #   OpenAI Client
 # ======================
-client = OpenAI(api_key="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")   
-# <--- Linh dán key vào đây
+import os
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 
 # ======================
